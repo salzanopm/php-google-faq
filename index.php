@@ -55,8 +55,8 @@ $db = [
     ],
     'Perché il mio account è associato a un paese?' => [
         'Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire 
-        due cose: 
-        <br> 
+        due cose:  
+        <br>
         <br>
         <ol>
             <li>
@@ -64,16 +64,18 @@ $db = [
                 rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori 
                 tramite una delle due società seguenti:
             </li>
+            <br>
             <ol>
-                <li>
+                <li class="alphabet-list">
                     Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione 
                     europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
                 </li>
-                <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+                <br>
+                <li class="alphabet-list">Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
             </ol>
+            <br>
             <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>    
         </ol>
-        <br>
         <br>
         Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata 
         che li offre o dal paese a cui è associato il tuo account.' 
@@ -157,21 +159,25 @@ $db = [
         </header>  
         <nav>
             <ul class="nav-header">
-                <li>Introduzione</li>
-                <li>Norme sulla privacy</li>
-                <li>Termini di servizio</li>
-                <li>Tecnologie</li>
-                <li class="active">Domande frequenti</li>
+                <li><a href="">Introduzione</a></li>
+                <li><a href="">Norme sulla privacy</a></li>
+                <li><a href="">Termini di servizio</a></li>
+                <li><a href="">Tecnologie</a></li>
+                <li class="active"><a href="">Domande frequenti</a></li>
             </ul>
         </nav> 
     </div>
     
     <main>
         <?php foreach($db as $question => $answers) { ?>
+            <br>
+            <br>
+            <br>
             <h2><?php echo ucfirst($question); ?></h2>
             <br>
             <?php foreach($answers as $single_answer) { ?>
             <div><?php echo $single_answer; ?></div>
+            <br>
             <br>
             <?php } ?>        
         <?php } ?>
@@ -180,13 +186,10 @@ $db = [
     <footer>
         <div class="footer-wrapper">
             <ul class="info-container">
-                <li>Google</li>
-                <li class="center-dot"></li>
-                <li>Tutto su Google</li>
-                <li class="center-dot"></li>
-                <li>Privacy</li>
-                <li class="center-dot"></li>
-                <li>Termini</li>
+                <li><a href="">Google</a></li>
+                <li class="center-dot"><a href="">Tutto su Google</a></li>
+                <li class="center-dot"><a href="">Privacy</a></li>
+                <li class="center-dot"><a href="">Termini</a></li>
             </ul>
             <div class="language-container">
                 <i class="fas fa-comment-alt"></i>
