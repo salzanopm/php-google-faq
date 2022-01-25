@@ -136,11 +136,11 @@ $db = [
                 <li>Norme sulla privacy</li>
                 <li>Termini di servizio</li>
                 <li>Tecnologie</li>
-                <li>Domande frequenti</li>
+                <li class="active">Domande frequenti</li>
             </ul>
-        </nav>  
+        </nav> 
     </div>
-    <hr>
+    
     <main>
         <?php foreach($db as $role => $people) { ?>
             <h2><?php echo ucfirst($role); ?></h2>
@@ -156,11 +156,11 @@ $db = [
         <div class="footer-wrapper">
             <ul class="info-container">
                 <li>Google</li>
-                <li>.</li>
+                <li class="center-dot"></li>
                 <li>Tutto su Google</li>
-                <li>.</li>
+                <li class="center-dot"></li>
                 <li>Privacy</li>
-                <li>.</li>
+                <li class="center-dot"></li>
                 <li>Termini</li>
             </ul>
             <div class="language-container">

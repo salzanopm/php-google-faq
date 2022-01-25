@@ -83,6 +83,14 @@ header:after {
 
 .nav-header {
     display: inline-block;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-wrapper {
+    border-bottom: solid 1px #cbcbcb;
+    padding-bottom: -10px;
 }
 
 li {
@@ -90,16 +98,17 @@ li {
 }
 
 .nav-header > li {
-    margin: 10px 20px;
+    margin: 0 20px;
     font-size: large;
     color: #5f6368;
 }
 
-/* HR */
-hr {
-    border: none;
-    border-bottom: solid 1px #cbcbcb;
+.active {
+    color: #3367d6;
+    border-bottom: solid 4px #3367d6;
+    line-height: 47px;
 }
+
 
 /* MAIN */
 main {
@@ -107,6 +116,7 @@ main {
     padding-top: 150px;
     width: 80%;
     margin: auto;
+    color: #3c4043;
 }
 
 /* FOOTER */
@@ -132,4 +142,10 @@ select {
     justify-content: space-between;
     align-items: center;
     height: 45px;
+}
+
+
+
+.center-dot:before {
+    content: "\2022";
 }
